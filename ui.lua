@@ -15,6 +15,7 @@ ProtectGui(ScreenGui);
 
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
 ScreenGui.Parent = CoreGui;
+ScreenGUi.Name = "XOP_UI_LIB_X"
 
 local Toggles = {};
 local Options = {};
@@ -39,7 +40,7 @@ local Library = {
     OpenedFrames = {};
 
     Signals = {};
-    ScreenGui = "XOP";
+    ScreenGui = ScreenGui;
 };
 
 local RainbowStep = 0
