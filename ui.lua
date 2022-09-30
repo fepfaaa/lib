@@ -13,10 +13,9 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
 local ScreenGui = Instance.new('ScreenGui');
 ProtectGui(ScreenGui);
 
+ScreenGui.Parent = game.CoreGui;
+ScreenGui.Name = "XOP";
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
-ScreenGui.Parent = CoreGui;
-ScreenGUi.Name = "XOP_UI_LIB_X"
-
 local Toggles = {};
 local Options = {};
 
